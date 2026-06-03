@@ -328,10 +328,6 @@
       <div class="affil">Head of AI/ML, Motive</div>
     </div>
     <div class="author-pill">
-      <div class="name">Motilal Agarwal</div>
-      <div class="affil">Chief Scientist &amp; Co-founder, Zippin</div>
-    </div>
-    <div class="author-pill">
       <div class="name">Tanmay Bangalore</div>
       <div class="affil">Senior Software Engineer, Meta</div>
     </div>
@@ -364,8 +360,8 @@
       <p>Global data association under asynchronous, unreliable observations via integer programming and graph-based formulations.</p>
     </div>
     <div class="pillar">
-      <strong>Structured Event Detection</strong>
-      <p>Inference from partial visual evidence with edge computing, Kubernetes deployment, and CPU/GPU/TPU optimization.</p>
+      <strong>Production Compute and Reliability</strong>
+      <p>Camera selection, compute architectures, and reliability engineering for continuous operation under bandwidth, latency, and hardware constraints.</p>
     </div>
   </div>
 
@@ -380,7 +376,7 @@
   <ul class="objectives">
     <li>Master automatic multi-camera calibration under scale, drift, and partial observability</li>
     <li>Understand real-time tracking under asynchrony and missing data</li>
-    <li>Learn structured event inference in multi-camera systems</li>
+    <li>Select cameras and compute architectures for production multi-camera systems</li>
     <li>Recognize how infrastructure constraints drive architectural decisions</li>
     <li>Design systems for reliability at scale</li>
   </ul>
@@ -388,10 +384,10 @@
   <h3>Live Demonstration</h3>
   <p>
     Attendees will interact with a live multi-camera perception system demonstrating online calibration,
-    global multi-object tracking, and structured event inference under realistic bandwidth, latency, and
+    global multi-object tracking, and reliability under realistic bandwidth, latency, and
     hardware constraints. The system operates fully offline using local compute and networking, with
-    pre-recorded fallback visualizations for all scenarios. Each component (calibration, tracking, event
-    inference) can be demonstrated independently.
+    pre-recorded fallback visualizations for all scenarios. Each component (calibration, tracking,
+    reliability handling) can be demonstrated independently.
   </p>
 
   <h3>Broader Impact</h3>
@@ -439,7 +435,7 @@
           </ul>
           <span class="demo-tag">&#9654; Live demo: Calibration visualization</span>
         </td>
-        <td class="presenter">Agarwal</td>
+        <td class="presenter">Bangalore</td>
       </tr>
       <tr class="break-row">
         <td class="time">15 min</td>
@@ -462,14 +458,14 @@
       <tr>
         <td class="time">45 min</td>
         <td>
-          <span class="talk-title">Structured Event Inference and Reliability in Multi-Camera Vision Systems</span>
+          <span class="talk-title">Production Compute and Reliability in Multi-Camera Vision Systems</span>
           <ul>
-            <li>Hand-shelf interactions, multi-camera fusion</li>
-            <li>Edge computing, Kubernetes deployment</li>
-            <li>CPU/GPU/TPU optimization, simulation stores</li>
+            <li>Camera selection: field of view, timing, cost</li>
+            <li>Compute architectures and trade-offs</li>
+            <li>Reliability and graceful degradation</li>
             <li>Case studies and failure modes</li>
           </ul>
-          <span class="demo-tag">&#9654; Live demo: Product interaction detection</span>
+          <span class="demo-tag">&#9654; Live demo: Reliability &amp; graceful degradation</span>
         </td>
         <td class="presenter">Bangalore + All</td>
       </tr>
@@ -577,6 +573,12 @@
 <section id="resources">
   <h2>Resources</h2>
 
+  <h3>Demo Code</h3>
+  <p>
+    The live demo source is on GitHub:
+    <a href="https://github.com/checkout-free-tutorial-cvpr26/demo-code">checkout-free-tutorial-cvpr26/demo-code</a>.
+  </p>
+
   <h3>Planned Materials (Public GitHub Repository)</h3>
   <ul style="margin: 0.5rem 0 1.25rem 1.25rem; font-size: 0.9rem;">
     <li><strong>Slides:</strong> 150+ slides with speaker notes (PDF/PPT)</li>
@@ -605,7 +607,7 @@
   <p>CVPR 2026 Tutorial &middot; Computer Vision at Scale: Checkout-Free Retail</p>
   <p style="margin-top:0.4rem;">
     Materials will be available on
-    <a href="https://github.com/tanmaniac/cvpr_checkout_free_tutorial">GitHub</a>
+    <a href="https://github.com/checkout-free-tutorial-cvpr26">GitHub</a>
     after the tutorial.
   </p>
 </footer>
