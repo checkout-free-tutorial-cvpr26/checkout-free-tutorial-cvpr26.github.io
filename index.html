@@ -150,6 +150,25 @@
     }
     .slides-note a { color: #1a237e; }
 
+    /* ── Recording ── */
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      margin: 1rem 0 1.25rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(26,35,126,0.18);
+      background: #000;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     /* ── Learning objectives ── */
     .objectives {
       list-style: none;
@@ -277,21 +296,6 @@
       line-height: 1.5;
     }
 
-    /* ── Audience ── */
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .audience-item {
-      background: #f3f4fd;
-      border-radius: 6px;
-      padding: 0.85rem 1rem;
-      font-size: 0.88rem;
-    }
-    .audience-item strong { display: block; color: #1a237e; margin-bottom: 0.2rem; }
-
     /* ── References ── */
     ol.refs {
       padding-left: 1.25rem;
@@ -323,10 +327,10 @@
 
 <!-- ── Navigation ── -->
 <nav>
+  <a href="#recording">Recording</a>
   <a href="#about">About</a>
   <a href="#schedule">Schedule</a>
   <a href="#organizers">Organizers</a>
-  <a href="#audience">Audience</a>
   <a href="#resources">Resources</a>
 </nav>
 
@@ -344,12 +348,32 @@
       <div class="affil">Senior Software Engineer, Meta</div>
     </div>
   </div>
+  <div class="meta">
+    <a href="https://cvpr.thecvf.com/virtual/2026/tutorial/36165" style="color:#90caf9; font-weight:600;">CVPR 2026 virtual page &rarr;</a>
+  </div>
 </header>
 
 <!-- ── Slides note ── -->
 <div class="slides-note">
   The presentation slides will be available 🔜
 </div>
+
+<!-- ── Recording ── -->
+<section id="recording">
+  <h2>Recording</h2>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/_Btyft27FkI"
+      title="CVPR 2026 Tutorial — Computer Vision at Scale: Checkout-Free Retail"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  <p>
+    Watch on <a href="https://www.youtube.com/watch?v=_Btyft27FkI">YouTube</a>,
+    or see the <a href="https://cvpr.thecvf.com/virtual/2026/tutorial/36165">CVPR 2026 virtual tutorial page</a>.
+  </p>
+</section>
 
 <!-- ── About ── -->
 <section id="about">
@@ -531,43 +555,6 @@
     </div>
 
   </div>
-</section>
-
-<!-- ── Audience ── -->
-<section id="audience">
-  <h2>Target Audience</h2>
-  <p><strong>Prerequisites:</strong> Basic computer vision (CNNs, detection). Camera geometry helpful but not required.</p>
-  <p><strong>Expected Attendance:</strong> 100&ndash;300 attendees.</p>
-
-  <div class="audience-grid">
-    <div class="audience-item">
-      <strong>CV Researchers</strong>
-      Interested in real-world deployment challenges and production failure modes
-    </div>
-    <div class="audience-item">
-      <strong>Edge AI Engineers</strong>
-      Working on bandwidth-constrained, latency-sensitive vision systems
-    </div>
-    <div class="audience-item">
-      <strong>PhD Students</strong>
-      In tracking, calibration, and video understanding
-    </div>
-    <div class="audience-item">
-      <strong>Industry Practitioners</strong>
-      In retail tech, autonomous vehicles, and warehouses
-    </div>
-    <div class="audience-item">
-      <strong>Research-Production Bridge</strong>
-      Anyone interested in the gap between academic research and real-world deployment
-    </div>
-  </div>
-
-  <h3>Subject Areas</h3>
-  <p>
-    <strong>Primary:</strong> Multi-object tracking and re-identification.<br/>
-    <strong>Secondary:</strong> Camera calibration &amp; 3D reconstruction; action/event recognition;
-    real-time CV systems; applications in retail automation; deep learning for correspondence.
-  </p>
 </section>
 
 <!-- ── Resources ── -->
